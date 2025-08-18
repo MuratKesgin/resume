@@ -1,0 +1,57 @@
+// ——— PUBLICATIONS ———
+const PUBLICATIONS = [
+  {
+    title: "Analysis and Design of an Electric Machine Employing a Special Stator with Phase Winding Modules and PMs and a Reluctance Rotor",
+    venue: "IEEE Access, Vol.12, pp. 9621-9631 (2024)",
+    link: "https://doi.org/10.1109/ACCESS.2024.3353041",
+  },
+  {
+    title: "Design Optimization of a Very High Power Density Motor with a Reluctance Rotor and a Modular Stator Having PMs and Toroidal Windings",
+    venue: "IEEE ECCE 2021, Vancouver, Canada, pp. 4424-4430 (Oct 2021)",
+    link: "https://doi.org/10.1109/ECCE47101.2021.9595129",
+  },
+  {
+    title: "Analysis of Torque Production in Axial‑flux Vernier PM Machines of the MAGNUS Type",
+    venue: "IEEE IEMDC 2021",
+    link: "https://ieeexplore.ieee.org/document/9449569",
+  },
+  {
+    title: "On the Modeling of Bearing Voltage and Current in PWM Converter‑fed Electric Machines Using Electromagnetic Finite Element Analysis",
+    venue: "IEEE ECCE 2021",
+    link: "https://ieeexplore.ieee.org/document/9595174",
+  },
+  {
+    title: "Modeling of Bearing Voltage in Electric Machines Based on Electromagnetic FEA and Measured Bearing Capacitance",
+    venue: "IEEE Transactions on Industry Applications, Vol. 57, No. 5 (Oct 2021)",
+    link: "https://ieeexplore.ieee.org/document/9483621",
+  },
+  {
+    title: "Design Optimization of Coreless Axial‑flux PM Machines with Litz Wire and PCB Stator Windings",
+    venue: "IEEE ECCE 2020",
+    link: "https://ieeexplore.ieee.org/document/9226097",
+  },
+  {
+    title: "Optimal Study of a High Specific Torque Vernier‑type Axial‑flux PM Machine with Two Different Stators and a Single Winding",
+    venue: "IEEE ECCE 2020",
+    link: "https://ieeexplore.ieee.org/document/9225956",
+  },
+  {
+    title: "Axial-field Vernier-type Flux Modulation Machines for Low-speed Direct-drive Applications",
+    venue: "IEEE ECCE 2019",
+    link: "https://ieeexplore.ieee.org/document/8912659",
+  },
+  {
+    title: "Overview of Flywheel Systems for Renewable Energy Storage with a Design Study for High-speed Axial-flux Permanent-magnet Machines",
+    venue: "IEEE ICRERA 2019",
+    link: "https://ieeexplore.ieee.org/document/8996877",
+  },
+];
+
+// ——— PATENTS ———
+const PATENTS = [
+  {
+    title: "Systems, Components, and Method for Permanent Magnet-free Motor and its Control",
+    number: "US20230318408A1",
+    link: "https://patents.google.com/patent/US20230318408A1/en",
+  },
+];
