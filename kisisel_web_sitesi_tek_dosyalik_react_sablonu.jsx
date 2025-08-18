@@ -38,9 +38,9 @@ const EXPERIENCES = [
       "Supported production analytics by identifying and resolving data quality issues, ensuring high confidence in reported results.",
       "Collaborated with cross-functional teams to define KPI strategy, assess process gaps, and align data pipeline improvements with department-level analytics roadmap.",
       "Deployed enhancements through CI/CD tools (Copado, Git, VSCode), maintaining data integrity across sandbox and production environments.",
-      "Used Jira to track tasks, manage sprints, and collaborate with cross-functional teams in Agile projects."
+      "Used Jira to track tasks, manage sprints, and collaborate with cross-functional teams in Agile projects.",
     ],
-    tech: ["Apex", "LWC", "Flows", "SQL", "Tableau", "Copado", "Git", "REST API"]
+    tech: ["Apex", "LWC", "Flows", "SQL", "Tableau", "Copado", "Git", "REST API"],
   },
   {
     role: "CRM Data Analyst II & Software Developer",
@@ -52,9 +52,9 @@ const EXPERIENCES = [
       "Developed custom reports and dashboards using Salesforce reporting tools and Excel (VLOOKUP, Pivot Tables) to visualize user behavior, adoption rates, and platform ROI.",
       "Leveraged Excel and SQL for advanced data analysis, including trend modeling and metric benchmarking.",
       "Built dashboards and usage metrics dynamically within Salesforce for internal stakeholders.",
-      "Collaborated with Customer Success team to ensure secure handling of customer usage data and reporting integrity."
+      "Collaborated with Customer Success team to ensure secure handling of customer usage data and reporting integrity.",
     ],
-    tech: ["Salesforce", "CPQ", "CLM", "Excel", "SQL", "Reports", "Dashboards"]
+    tech: ["Salesforce", "CPQ", "CLM", "Excel", "SQL", "Reports", "Dashboards"],
   },
   {
     role: "Software Developer",
@@ -67,9 +67,9 @@ const EXPERIENCES = [
       "Migrated legacy Workflow Rules and Process Builders into Flows.",
       "Customized and optimized standard objects and developed Reports and Dashboards.",
       "Implemented security controls via Sharing Rules and FLS.",
-      "Participated in Agile/Scrum ceremonies."
+      "Participated in Agile/Scrum ceremonies.",
     ],
-    tech: ["Apex", "LWC", "Flows", "Sales Cloud"]
+    tech: ["Apex", "LWC", "Flows", "Sales Cloud"],
   },
   {
     role: "Intern - Software Development",
@@ -80,9 +80,9 @@ const EXPERIENCES = [
       "Resolved QA and product support issues.",
       "Created and maintained test plans and cases.",
       "Validated software calculations through experimental comparisons.",
-      "Prepared detailed reports and communicated findings to teams."
+      "Prepared detailed reports and communicated findings to teams.",
     ],
-    tech: ["ANSYS Maxwell", "QA Testing"]
+    tech: ["ANSYS Maxwell", "QA Testing"],
   },
   {
     role: "Research Assistant",
@@ -93,10 +93,10 @@ const EXPERIENCES = [
       "Developed simulations for EV charging systems.",
       "Performed electromagnetic simulations with ANSYS Maxwell.",
       "Prepared reports and presented research findings.",
-      "Authored academic papers on energy systems and machine design."
+      "Authored academic papers on energy systems and machine design.",
     ],
-    tech: ["MATLAB", "Simulink", "ANSYS Maxwell"]
-  }
+    tech: ["MATLAB", "Simulink", "ANSYS Maxwell"],
+  },
 ];
 
 // ——— CERTIFICATES ———
@@ -131,6 +131,58 @@ const CONTACTS = [
   { label: "Email", value: PROFILE.email, href: `mailto:${PROFILE.email}`, icon: Mail },
   { label: "LinkedIn", value: "LinkedIn", href: PROFILE.links.linkedin, icon: Linkedin },
   { label: "Trailhead", value: "Trailhead", href: PROFILE.links.trailhead, icon: LinkIcon },
+];
+
+const PUBLICATIONS = [
+  {
+    title:
+      "Analysis and Design of an Electric Machine Employing a Special Stator with Phase Winding Modules and PMs and a Reluctance Rotor",
+    venue: "IEEE Access, Vol.12, pp. 9621-9631 (2024)",
+    link: "https://doi.org/10.1109/ACCESS.2024.3353041",
+  },
+  {
+    title:
+      "Design Optimization of a Very High Power Density Motor with a Reluctance Rotor and a Modular Stator Having PMs and Toroidal Windings",
+    venue: "IEEE ECCE 2021, Vancouver, Canada, pp. 4424-4430 (Oct 2021)",
+    link: "https://doi.org/10.1109/ECCE47101.2021.9595129",
+  },
+  {
+    title: "Analysis of Torque Production in Axial‑flux Vernier PM Machines of the MAGNUS Type",
+    venue: "IEEE IEMDC 2021",
+    link: "https://ieeexplore.ieee.org/document/9449569",
+  },
+  {
+    title:
+      "On the Modeling of Bearing Voltage and Current in PWM Converter‑fed Electric Machines Using Electromagnetic Finite Element Analysis",
+    venue: "IEEE ECCE 2021",
+    link: "https://ieeexplore.ieee.org/document/9595174",
+  },
+  {
+    title: "Modeling of Bearing Voltage in Electric Machines Based on Electromagnetic FEA and Measured Bearing Capacitance",
+    venue: "IEEE Transactions on Industry Applications, Vol. 57, No. 5 (Oct 2021)",
+    link: "https://ieeexplore.ieee.org/document/9483621",
+  },
+  {
+    title: "Design Optimization of Coreless Axial‑flux PM Machines with Litz Wire and PCB Stator Windings",
+    venue: "IEEE ECCE 2020",
+    link: "https://ieeexplore.ieee.org/document/9226097",
+  },
+  {
+    title: "Optimal Study of a High Specific Torque Vernier‑type Axial‑flux PM Machine with Two Different Stators and a Single Winding",
+    venue: "IEEE ECCE 2020",
+    link: "https://ieeexplore.ieee.org/document/9225956",
+  },
+  {
+    title: "Axial-field Vernier-type Flux Modulation Machines for Low-speed Direct-drive Applications",
+    venue: "IEEE ECCE 2019",
+    link: "https://ieeexplore.ieee.org/document/8912659",
+  },
+  {
+    title:
+      "Overview of Flywheel Systems for Renewable Energy Storage with a Design Study for High-speed Axial-flux Permanent-magnet Machines",
+    venue: "IEEE ICRERA 2019",
+    link: "https://ieeexplore.ieee.org/document/8996877",
+  },
 ];
 
 // ——— UI HELPERS ———
@@ -179,11 +231,18 @@ export default function PersonalSite() {
             </div>
             <div className="flex items-center gap-2">
               {PROFILE.resumeUrl !== "#" && (
-                <a href={PROFILE.resumeUrl} target="_blank" className="hidden sm:inline-flex px-3 py-2 rounded-xl border dark:border-white/10 border-black/10 hover:shadow-sm">
+                <a
+                  href={PROFILE.resumeUrl}
+                  target="_blank"
+                  className="hidden sm:inline-flex px-3 py-2 rounded-xl border dark:border-white/10 border-black/10 hover:shadow-sm"
+                >
                   <FileText className="h-4 w-4 mr-2" /> CV / Resume
                 </a>
               )}
-              <button onClick={() => setDark((d) => !d)} className="px-3 py-2 rounded-xl border dark:border-white/10 border-black/10 hover:shadow-sm">
+              <button
+                onClick={() => setDark((d) => !d)}
+                className="px-3 py-2 rounded-xl border dark:border-white/10 border-black/10 hover:shadow-sm"
+              >
                 {dark ? "☀️ Light" : "🌙 Dark"}
               </button>
             </div>
@@ -198,7 +257,12 @@ export default function PersonalSite() {
             <p className="max-w-3xl opacity-90 leading-7">{PROFILE.summary}</p>
             <div className="mt-4 flex flex-wrap gap-3">
               {CONTACTS.map((c) => (
-                <a key={c.label} href={c.href} target="_blank" className="inline-flex items-center gap-2 px-3 py-2 rounded-xl border dark:border-white/10 border-black/10 hover:shadow-sm">
+                <a
+                  key={c.label}
+                  href={c.href}
+                  target="_blank"
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-xl border dark:border-white/10 border-black/10 hover:shadow-sm"
+                >
                   <c.icon className="h-4 w-4" /> {c.label}
                 </a>
               ))}
@@ -212,16 +276,23 @@ export default function PersonalSite() {
             {EXPERIENCES.map((exp, i) => (
               <Card key={i}>
                 <h4 className="text-lg font-semibold">{exp.role}</h4>
-                <p className="opacity-80">{exp.company} • {exp.period}</p>
+                <p className="opacity-80">
+                  {exp.company} • {exp.period}
+                </p>
                 <ul className="mt-3 space-y-1 text-sm">
                   {exp.bullets.map((b, j) => (
-                    <li key={j} className="flex gap-2"><ChevronRight className="h-4 w-4 mt-0.5 flex-none" />{b}</li>
+                    <li key={j} className="flex gap-2">
+                      <ChevronRight className="h-4 w-4 mt-0.5 flex-none" />
+                      {b}
+                    </li>
                   ))}
                 </ul>
                 {exp.tech && (
                   <div className="mt-3 flex flex-wrap gap-2">
                     {exp.tech.map((t) => (
-                      <span key={t} className="px-2 py-1 rounded-lg border border-black/10 dark:border-white/10 text-xs">{t}</span>
+                      <span key={t} className="px-2 py-1 rounded-lg border border-black/10 dark:border-white/10 text-xs">
+                        {t}
+                      </span>
                     ))}
                   </div>
                 )}
